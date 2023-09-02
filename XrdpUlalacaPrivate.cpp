@@ -254,7 +254,7 @@ void XrdpUlalacaPrivate::updateThreadLoop() {
             skippedRects.clear();
         }
 
-        // LOG(LOG_LEVEL_TRACE, "updating screen: [%.4f] %d, %d", update.timestamp, update.width, update.height);
+        LOG(LOG_LEVEL_TRACE, "updating screen: [%.4f] %d, %d", update.timestamp, update.width, update.height);
 
         if (_sessionSize.width != update.width || _sessionSize.height != update.height) {
             // server_reset(this, width, height, _bpp);
